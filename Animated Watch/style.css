@@ -1,0 +1,59 @@
+body{
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			height:95vh;
+			background:#f1f5f9;
+		}
+		.num{
+			position:absolute;
+			top:47%;
+			left:48%;
+			transform:
+			rotate(calc(var(--i) * 30deg))
+			translate(0, -85px)
+			rotate(calc(var(--i) * -30deg));
+			color:#111;
+			font-size:16px;
+			font-weight:bold;
+		}
+		.clock{
+			width:200px;
+			height:200px;
+			background:white;
+			border-radius:50%;
+			position:relative;
+			box-shadow:0 10px 30px rgba(0,0,0,.2);
+		}
+		.hand{
+			position:absolute;
+			bottom:50%;
+			left:50%;
+			transform-origin:bottom;
+			transform:translateX(-50%);
+		}
+		.hour{
+			width:6px;
+			height:30px;
+			background:#111;
+		}
+		.minute{
+			width:4px;
+			height:60px;
+			background:#333;
+		}
+		.second{
+			width:2px;
+			height:70px;
+			background:red;
+		}
+		.center{
+			width:10px;
+			height:10px;
+			background:#111;
+			border-radius:50%;
+			position:absolute;
+			top:50%;
+			left:50%;
+			transform:translate(-50%,-50%);
+		}
